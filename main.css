@@ -17,6 +17,7 @@
 
 nav {
     position: sticky;
+    top: 0;
     width: 100%;
     background-color: white;
     z-index: 9875;
@@ -291,6 +292,61 @@ nav {
 
 .get-btn-container {
     width: 70%;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+}
+
+.get-container{
+    width: 1200px;
+    height: 200px;
+    border: 1px solid #083e78;
+    color: black;
+    border-radius: 15px;
+    padding: 20px 40px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.get-container h1 {
+    font-size: 48px;
+}
+
+.get-container p {
+    font-size: 16px;
+}
+
+
+.get-btn-1 {
+    background: transparent;
+    color: #ffffff;
+    border: none;
+}
+
+.our-mision {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.our-mision h1 {
+    font-size: 56px;
+}
+
+.about-text {
+    font-size: 16px;
+    line-height: 150%;
+    max-width: 530px;
+    min-width: 300px;
+    padding-top: 20px;
+}
+
+.our-vision h1, .our-vision p {
+    text-align: right;
 }
 
 
@@ -385,10 +441,26 @@ nav {
         gap: 24px;
     }
 
+    .our-mision {
+        flex-wrap: wrap;
+    }
+
+    .our-vision {
+        flex-wrap: wrap-reverse;
+    }
+
+    .our-vision h1, .our-vision p {
+        text-align: left;
+    }
+
+    .our-mision h1 {
+        font-size: 48px;
+    }
+
 }
 
 @media only screen and (max-width: 480px) {
-    .hero h1, .sect-1 h1 {
+    .hero h1, .sect-1 h1,  .our-mision h1  {
         font-size: 32px;
     } 
 
