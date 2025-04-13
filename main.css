@@ -1,0 +1,243 @@
+:root {
+    --main-font-family: 'Instrument Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: all .5s ease-in;
+    font-family: var(--main-font-family);
+    ;
+}
+
+
+nav {
+    position: sticky;
+    width: 100%;
+    background-color: white;
+    z-index: 9875;
+    display: flex;
+    align-items: center;
+    padding: 25px 80px;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.08);
+}
+
+.the-emissary-logo-1 {
+    flex-shrink: 0;
+    width: 37px;
+    height: 39px;
+    position: relative;
+    object-fit: cover;
+    aspect-ratio: 37/39;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.nav-link {
+    padding: 0px 12px 0px 12px;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.nav-link a {
+    color: #000000;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+}
+
+.cta-btn {
+    background: #083e78;
+    border-radius: 4px;
+    padding: 14px 33px 14px 33px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    border: none;
+}
+
+.cta-btn a {
+    color: #ffffff;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+}
+
+.ham {
+    display: none;
+    width: 32px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 80px;
+    background-image: url(/assets/herobg.svg);
+}
+
+.hero h1 {
+    font-size: 56px;
+    font-weight: 700;
+    color: #000;
+    text-align: left;
+    display: inline-block;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #000;
+    text-align: left;
+    line-height: 150%;
+}
+
+.hero img {
+    width: 50%;
+    min-width: 300px;
+    border-radius: 15px
+}
+
+.hero-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 24px;
+    text-align: left;
+    width: 650px;
+}
+
+.hero-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 360px;
+}
+
+.donate-btn {
+    border-radius: 4px;
+    background-color: #083e78;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 33px;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 16px;
+    color: #fff;
+    font-family: Satoshi;
+    border: none;
+}
+
+.learn-btn {
+    text-decoration: underline;
+    border-radius: 4px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 33px;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 16px;
+    color: #083e78;
+    border: none;
+    background-color: transparent;
+}
+
+@media only screen and (max-width: 1200px) {
+    .hero {
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .hero img {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    nav {
+        padding: 25px 20px;
+    }
+
+    .ham {
+        display: block;
+        z-index: 999;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        position: fixed;
+        min-height: 200px;
+        top: 0;
+        right: -20px;
+        background-color: #fff;
+        box-shadow: 0px 1px 19px 0px #efcf0025, 0px 0px 48px 0px hsla(30, 78%, 91%, .6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        max-width: 28rem;
+        height: 100vh;
+        z-index: 998;
+    }
+
+    .nav-link {
+        flex-direction: column;
+    }
+
+    .nav-open {
+        right: -100%;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero{
+        padding: 25px 20px;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero-btn-container {
+        flex-wrap: wrap;
+    }
+}
